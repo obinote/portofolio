@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
@@ -26,6 +27,7 @@ export function ModeToggle() {
   return (
     <Button
       variant={"secondary"}
+      className="rounded-full"
       size={"icon"}
       onClick={() => setTheme(`${isDark ? "light" : "dark"}`)}>
       {isDark ? (<Sun className="hover:cursor-pointer hover:text-primary" />) : (<Moon className="hover:cursor-pointer hover:text-primary" />)}
