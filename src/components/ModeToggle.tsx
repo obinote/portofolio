@@ -28,6 +28,7 @@ export function ModeToggle() {
     <Button
       variant={"secondary"}
       className="rounded-full"
+      test-id="theme-toggle"
       size={"icon"}
       onClick={() => setTheme(`${isDark ? "light" : "dark"}`)}>
       {isDark ? (<Sun className="hover:cursor-pointer hover:text-primary" />) : (<Moon className="hover:cursor-pointer hover:text-primary" />)}

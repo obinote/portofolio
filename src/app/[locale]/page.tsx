@@ -1,4 +1,3 @@
-import { ModeToggle } from "@/components/ModeToggle";
 import { createTranslation } from "@/i18n/server";
 import { LocaleTypes } from "@/i18n/settings";
 
