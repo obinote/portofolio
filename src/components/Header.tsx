@@ -1,31 +1,28 @@
 "use client";
 
-import { usePathname, useParams } from "next/navigation";
-import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
-import ChangeLocale from "./ChangeLocale";
+import { Nav, NavLink } from "./Navigation";
 
 const Header = () => {
-  const pathName = usePathname();
-  const locale = useParams()?.locale;
-
+  const navigations = [
+    { id: "projects", title: "Projects" },
+    { id: "about", title: "About" },
+  ];
   return (
     <header className="flex flex-row justify-between items-center gap-x-4 px-8 py-6">
-      <ModeToggle />
-      {/* <nav className="flex gap-2 mb-2">
-        <Link
-          href={`/${locale}`}
-          className={pathName === `/${locale}` ? "text-blue-700" : ""}>
+      <div className="flex flex-row items-center justify-start gap-x-2">
+        <ModeToggle />
+        <NavLink href={`/`}>
           Home
-        </Link> */}
-      {/* <Link
-          href={`/${locale}/about`}
-          className={pathName === `/${locale}/about` ? 'text-blue-700' : ''}
-        >
-          About
-        </Link> */}
-      {/* </nav> */}
-      <ChangeLocale />
+        </NavLink>
+      </div>
+      <Nav>
+        {navigations.map((nav) => (
+          <NavLink key={nav.id} href={`/${nav.id}`}>
+            {nav.title}
+          </NavLink>
+        ))}
+      </Nav>
     </header>
   );
 };
