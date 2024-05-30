@@ -2,6 +2,7 @@ import React from "react";
 import { ProjectCard } from "./ProjectCard";
 
 type ProjectImageType = {
+  id?: string;
   path: string;
   width: number;
   height: number;
