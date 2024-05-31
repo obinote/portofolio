@@ -42,8 +42,8 @@ export function ProjectCard({
           </div>
           <div className="absolute inset-0 bg-card-foreground opacity-40 -translate-x-[100%] duration-500 group-hover:translate-x-0"></div>
           <div className="absolute inset-0 flex translate-y-[100%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 min-h-16">
-            <h1 className="font-sans text-3xl font-bold text-primary-foreground">{name}</h1>
-            <p className="mb-3 text-lg italic font-medium text-primary-foreground opacity-0 transition-opacity duration-300 group-hover:opacity-100 line-clamp-5">
+            <h1 className="font-sans text-xl font-bold text-primary-foreground">{name}</h1>
+            <p className="mb-3 text-base italic font-medium text-primary-foreground opacity-0 transition-opacity duration-300 group-hover:opacity-100 line-clamp-2">
               {description}
             </p>
             <Link

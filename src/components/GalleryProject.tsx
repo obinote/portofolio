@@ -36,8 +36,8 @@ export type Project = {
 export default function GalleryProject({ projects }: { projects: Project[] }) {
   return (
     <div className="min-h-screen flex items-start relative">
-      <div className="flex-1 max max-w-screen-lg mx-auto p-8">
-        <div className="columns-1 gap-4 sm:columns-2 sm:gap-4 md:columns-3 [&>div:not(:first-child)]:mt-4">
+      <div className="flex-1 max max-w-screen-xl mx-auto p-8">
+        <div className="columns-1 gap-3 sm:columns-2 lg:columns-4 [&>div:not(:first-child)]:mt-4">
           {projects.map((project) => {
             return (
               <ProjectCard
