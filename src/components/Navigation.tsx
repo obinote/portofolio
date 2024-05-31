@@ -6,7 +6,11 @@ import { usePathname } from "next/navigation";
 import { ComponentProps, ReactNode } from "react";
 
 export function Nav({ children }: { children: ReactNode }) {
-  return <nav className="text-primary flex justify-center px-4 gap-x-3">{children}</nav>;
+  return (
+    <nav className="text-primary flex justify-center px-4 gap-x-3">
+      {children}
+    </nav>
+  );
 }
 
 export function NavLink(props: Omit<ComponentProps<typeof Link>, "className">) {
@@ -16,7 +20,6 @@ export function NavLink(props: Omit<ComponentProps<typeof Link>, "className">) {
       {...props}
       className={cn(
         "p-2 hover:bg-secondary hover:text-secondary-foreground focus-visible:bg-secondary focus-visible:text-secondary-foreground uppercase rounded-lg",
-        pathname === props.href && "bg-background text-foreground"
       )}
     />
   );

@@ -9,7 +9,7 @@ const Header = () => {
     { id: "about", title: "About" },
   ];
   return (
-    <header className="flex flex-row justify-between items-center gap-x-4 px-8 py-6">
+    <header className="flex flex-row justify-between items-center gap-x-4 px-8 py-6 sticky top-0 z-50 dark:bg-[#020817] bg-[#ffffff] bg-opacity-50 dark:bg-opacity-50">
       <div className="flex flex-row items-center justify-start gap-x-2">
         <ModeToggle />
         <NavLink href={`/`}>

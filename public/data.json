@@ -1,8 +1,110 @@
 [
   {
+    "id": "yt_004",
+    "name": "Deal in 30 Min",
+    "description": "Learn how to make deal with client in 30 minutes",
+    "category": "yt-thumnail",
+    "story": "",
+    "thumbnail": {
+      "path": "https://drive.google.com/uc?export=view&id=17xgLmED69eKeanH7oyWjrHiw4W5B_MSY",
+      "width": 1280,
+      "height": 720
+    },
+    "items": [
+    ]
+  },
+  {
+    "id": "yt_003",
+    "name": "English Podcast",
+    "description": "Learn English with Podcast EP 24",
+    "category": "yt-thumnail",
+    "story": "",
+    "thumbnail": {
+      "path": "https://drive.google.com/uc?export=view&id=1ui5_9Y3O1zXdZbpwjyhd2KyGIrNhpv2r",
+      "width": 1280,
+      "height": 720
+    },
+    "items": [
+    ]
+  },
+  {
+    "id": "yt_002",
+    "name": "Siomay",
+    "description": "Indonesian dumpling",
+    "category": "yt-thumnail",
+    "story": "",
+    "thumbnail": {
+      "path": "https://drive.google.com/uc?export=view&id=1EFTpGjaoOVoeRPh3TLzxB7sY_ZUSXONK",
+      
+      "width": 1280,
+      "height": 720
+    },
+    "items": [
+    ]
+  },
+  {
+    "id": "yt_001",
+    "name": "Yoga Prenatal",
+    "description": "Yoga Prenatal in 15 minutes",
+    "category": "yt-thumnail",
+    "story": "",
+    "thumbnail": {
+      "path": "https://drive.google.com/uc?export=view&id=1iIqLeOaVqRAV8HTJ8gC7qTPMsCIBWUjQ",
+      "width": 1280,
+      "height": 720
+    },
+    "items": [
+    ]
+  },
+  {
+    "id": "ig_001",
+    "name": "Instagram Carousel Post",
+    "description": "Carousel post to promote Yoga Prenatal",
+    "category": "social-media",
+    "story": "",
+    "thumbnail": {
+      "path": "https://drive.google.com/uc?export=view&id=1POZ7_9Zogcl--frkDgTxgPiXef3qstQL",
+      "width": 1080,
+      "height": 1080
+    },
+    "items": [
+      {
+        "path": "https://drive.google.com/uc?export=view&id=1_6OZJNpoSrQY40CusmiCtoSnkJgANYUn",
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "path": "https://drive.google.com/uc?export=view&id=1OBG6THzu55xHIjllhTAk0jBW7r66jw_4",
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "path": "https://drive.google.com/uc?export=view&id=18sOeZKf3q4WIUJEh02J07u9dQweU_3os",
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "path": "https://drive.google.com/uc?export=view&id=1Nypf2SqBJTPWOJLDduLVwQQXklC4Bflk",
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "path": "https://drive.google.com/uc?export=view&id=1Y66HbP4CVhd3z0rbCQO3sasycWQJxOkU",
+        "width": 1080,
+        "height": 1080
+      },
+      {
+        "path": "https://drive.google.com/uc?export=view&id=1yDPg1OFWj4qoAKIUiBox4wzTBGbLtBfG",
+        "width": 1080,
+        "height": 1080
+      }
+    ]
+  },
+  {
     "id": "l_001",
     "name": "Emerald Logo",
     "description": "Logo for mom and baby massage",
+    "category": "logo",
     "story": "",
     "thumbnail": {
       "path": "https://drive.google.com/uc?export=view&id=1zlfLQczIfFEYIJi_gKI5Pwjv1HhP24Mv",
@@ -26,6 +128,7 @@
     "id": "eb_001",
     "name": "The Mystery of Eggs",
     "description": "Become an expert in cooking eggs",
+    "category": "e-book",
     "story": "",
     "thumbnail": {
       "path": "https://drive.google.com/uc?export=view&id=1HCrQ9nH5sT8V01NFb-iimaK_dDxbDBvh",

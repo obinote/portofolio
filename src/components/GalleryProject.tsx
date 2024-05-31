@@ -12,6 +12,7 @@ export type Project = {
   id: string;
   name: string;
   description: string;
+  category: string;
   story: string;
   thumbnail: ProjectImageType;
   items: ProjectImageType[];
