@@ -7,19 +7,8 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
-  DrawerHeader,
-  DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 import React, { useCallback, useEffect, useState } from "react";
 
@@ -53,14 +42,11 @@ export default function ProjectsPage() {
       const jsonData: Project[] = await res.json();
 
       if (category) {
-        console.log(category);
-
         setData(jsonData.filter((data) => data.category === category));
         setVisibleData(
           jsonData.filter((data) => data.category === category).slice(0, 20)
         );
       } else {
-        console.log("full");
         setData(jsonData);
         setVisibleData(jsonData.slice(0, 20));
       }
