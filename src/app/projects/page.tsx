@@ -10,6 +10,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { cn } from "@/lib/utils";
+import { useSearchParams } from "next/navigation";
 import React, { useCallback, useEffect, useState } from "react";
 
 type categoryData = {
@@ -18,9 +19,10 @@ type categoryData = {
 };
 
 export default function ProjectsPage() {
+  const param = useSearchParams();
   const [data, setData] = useState<Project[]>([]);
   const [categoryData, setCategoryData] = useState<categoryData[]>([]);
-  const [category, setCategory] = useState<string>();
+  const [category, setCategory] = useState<string>(param.get('cat') as string);
   const [visibleData, setVisibleData] = useState<Project[]>([]);
   const [itemsToShow, setItemsToShow] = useState<number>(20);
   const [isLoading, setIsLoading] = useState<boolean>(false);
