@@ -1,4 +1,4 @@
-import { ArrowBigUpIcon, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const BackToTop: React.FC = () => {

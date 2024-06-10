@@ -41,12 +41,6 @@ const Hero = () => {
           <Button variant={"secondary"} className="text-primary font-sans font-bold">View My Work</Button>
         </Link>
       </motion.div>
-      {/* <motion.a
-        href="#portfolio"
-        className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300"
-        >
-        View My Work
-      </motion.a> */}
     </section>
   );
 };

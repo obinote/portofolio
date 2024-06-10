@@ -12,26 +12,14 @@ export type Project = {
   id: string;
   name: string;
   description: string;
+  initial: any;
+  whileInView: any;
+  transition: any;
   category: string;
   story: string;
   thumbnail: ProjectImageType;
   items: ProjectImageType[];
 };
-
-// export const projects: Project[] = [
-//   {
-//     id: "eb_001",
-//     name: "The Mystery of Eggs",
-//     description: "Become an expert in cooking eggs",
-//     story: "",
-//     thumbnail: {
-//       path: "https://drive.google.com/uc?export=view&id=1qFHrb3681YWcXlqI-zzLsuzv7-1JLUIr",
-//       width: 291,
-//       height: 678,
-//     },
-//     items: [],
-//   },
-// ];
 
 export default function GalleryProject({ projects }: { projects: Project[] }) {
   return (

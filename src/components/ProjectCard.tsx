@@ -1,8 +1,11 @@
-// "use client";
+"use client";
 
-import { Card, CardContent, CardHeader } from "./ui/card";
+import { Card, CardContent } from "./ui/card";
 import Link from "next/link";
 import Image from "next/image";
+import Spinner from "./Spinner";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 type Thumnail = {
   id?: string;
@@ -24,20 +27,35 @@ export function ProjectCard({
   description,
   thumbnail,
 }: ProjectCardProps) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <Card className="overflow-hidden card_item border-foreground border-2 flex justify-center items-center">
       <CardContent className="p-0">
         <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-card-foreground/30">
-          <div className="relative flex justify-center gap-x-3">
+          <div className={cn(`relative flex justify-center gap-x-3`)}>
             <Image
               src={thumbnail.path}
               width={thumbnail.width}
               height={thumbnail.height}
+              onLoadingComplete={() => setIsLoaded(true)}
               alt={name}
-              className="object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+              className={cn(
+                `object-cover ${
+                  isLoaded ? "transition-transform" : "transition-opacity"
+                } duration-500 group-hover:rotate-3 group-hover:scale-125 ${
+                  isLoaded ? "opacity-100" : "opacity-0"
+                }`
+              )}
             />
+
+            {!isLoaded && (
+              <div className="absolute inset-0 flex items-center justify-center bg-secondary">
+                <Spinner />
+              </div>
+            )}
           </div>
-          <div className="absolute inset-0 bg-card-foreground opacity-40 -translate-x-[100%] duration-500 group-hover:translate-x-0"></div>
+          <div className="absolute inset-0 bg-card-foreground opacity-60 -translate-x-[100%] duration-500 group-hover:translate-x-0"></div>
           <div className="absolute inset-0 flex translate-y-[100%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0 min-h-16">
             <h1 className="font-sans text-xl font-bold text-primary-foreground">
               {name}

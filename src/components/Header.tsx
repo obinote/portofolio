@@ -14,7 +14,7 @@ const Header = () => {
     { id: "portfolio", title: "Projects" },
     { id: "contact", title: "Contact" },
   ];
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
   const isDark = theme === "dark";
 
   return (
