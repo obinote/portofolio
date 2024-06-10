@@ -6,7 +6,37 @@ import { motion } from "framer-motion";
 
 const logoData = [
   {
-    id: "sm_001",
+    id: "sm_005",
+    name: "Baby Massage Promo",
+    description: "Service Offer",
+    path: "https://drive.google.com/uc?export=view&id=1bY0fnu0Ytm0AeiPlTY2BmbQQ0I-2cBHK",
+    category: "post",
+    initial: { opacity: 0, y: 50 },
+    whileInView: { opacity: 1, y: 0 },
+    transition: { duration: 0.8 },
+  },
+  {
+    id: "sm_004",
+    name: "Remote Working",
+    description: "Workshop",
+    path: "https://drive.google.com/uc?export=view&id=1wD0UbjrDSpMooyc7nNyPhnXwqEm5hOL2",
+    category: "post",
+    initial: { opacity: 0, y: 50 },
+    whileInView: { opacity: 1, y: 0 },
+    transition: { duration: 0.8 },
+  },
+  {
+    id: "sm_003",
+    name: "Fitness Training",
+    description: "Special Offer",
+    path: "https://drive.google.com/uc?export=view&id=12xymB0rXpCkwuYbqAov7-VUo3zteLeTT",
+    category: "post",
+    initial: { opacity: 0, y: 50 },
+    whileInView: { opacity: 1, y: 0 },
+    transition: { duration: 0.8 },
+  },
+  {
+    id: "sm_002",
     name: "Baby Massage",
     description: "Discover the Magic of Baby Massage",
     path: "https://drive.google.com/uc?export=view&id=1UmxRnBYiPD-svONdS6vY7VQzX849tXo4",
@@ -33,7 +63,7 @@ export default function SocialMediaProject() {
       <h2 className="text-3xl font-bold text-center mb-6">
         Social Media Design
       </h2>
-      <div className="flex flex-row flex-wrap gap-8 items-start justify-center">
+      <div className="flex flex-row flex-wrap gap-4 items-start justify-center mb-4">
         {logoData
           .filter((data) => data.category === "carousel")
           .map((project) => (
@@ -45,7 +75,6 @@ export default function SocialMediaProject() {
               viewport={{ once: false }}
               style={{
                 maxWidth: 768,
-                marginBottom: 8,
               }}>
               <ProjectCard
                 description={project.description}
@@ -55,17 +84,17 @@ export default function SocialMediaProject() {
             </motion.div>
           ))}
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
         {logoData
           .filter((data) => data.category !== "carousel")
           .map((project) => (
             <motion.div
               key={project.id}
               className="relative"
-              initial={{ opacity: 0, scale: 0.5, rotate: 45 }}
-              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-              viewport={{ once: false }}
-              transition={{ duration: 0.8 }}>
+              initial={project.initial}
+              whileInView={project.whileInView}
+              transition={project.transition}
+              viewport={{ once: false }}>
               <ProjectCard
                 description={project.description}
                 name={project.name}
