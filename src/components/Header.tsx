@@ -10,8 +10,9 @@ import robiBlack from "@/assets/image/blackIcon.svg";
 
 const Header = () => {
   const navigations = [
-    { id: "projects", title: "Projects" },
     { id: "about", title: "About" },
+    { id: "portfolio", title: "Projects" },
+    { id: "contact", title: "Contact" },
   ];
   const { theme, setTheme } = useTheme();
   const isDark = theme === "dark";
@@ -33,7 +34,7 @@ const Header = () => {
       <div className="flex flex-row items-center gap-x-3">
         <Nav>
           {navigations.map((nav) => (
-            <NavLink key={nav.id} href={`/${nav.id}`}>
+            <NavLink key={nav.id} href={`#${nav.id}`}>
               {nav.title}
             </NavLink>
           ))}

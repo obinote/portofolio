@@ -3,6 +3,13 @@
 import React, { useCallback, useEffect, useState } from "react";
 import GalleryProject, { Project } from "@/components/GalleryProject";
 import Spinner from "@/components/Spinner";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Portfolio from "@/components/Portofolio";
+import Services from "@/components/Services";
+import Contact from "@/components/Contact";
+import BackToTop from "@/components/BackToTop";
 
 export default function HomePage() {
   const [data, setData] = useState<Project[]>([]);
@@ -53,28 +60,15 @@ export default function HomePage() {
 
   return (
     <div className="container py-6 flex flex-col">
-      <section>
-        <div className="flex items-center justify-center flex-col mb-5">
-          <h3 className="text-4xl font-sans font-bold text-primary">
-            Hello, I am <span className="text-emerald-500">Robi!</span>
-          </h3>
-          <h5 className="text-xl font-sans text-primary">
-            I am a freelance graphic designer.
-          </h5>
-        </div>
-        <div className="flex items-center justify-center flex-col mb-5">
-          <p>
-            I assist clients in engaging effectively with their intended
-            audiences.
-          </p>
-          <p>Feel free to reach out to me for all your graphic design needs!</p>
-        </div>
-      </section>
-      <section>
-        <GalleryProject projects={visibleData} />
-
-        {isLoading && <Spinner />}
-      </section>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        {/* <Services /> */}
+        <Portfolio projects={data} />
+        <Contact />
+        <BackToTop />
+      </main>
     </div>
   );
 }

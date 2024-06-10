@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectCard } from "./ProjectCard";
 
-type ProjectImageType = {
+export type ProjectImageType = {
   id?: string;
   path: string;
   width: number;

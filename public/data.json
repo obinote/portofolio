@@ -10,8 +10,7 @@
       "width": 1280,
       "height": 720
     },
-    "items": [
-    ]
+    "items": []
   },
   {
     "id": "yt_003",
@@ -24,8 +23,7 @@
       "width": 1280,
       "height": 720
     },
-    "items": [
-    ]
+    "items": []
   },
   {
     "id": "yt_002",
@@ -35,12 +33,11 @@
     "story": "",
     "thumbnail": {
       "path": "https://drive.google.com/uc?export=view&id=1EFTpGjaoOVoeRPh3TLzxB7sY_ZUSXONK",
-      
+
       "width": 1280,
       "height": 720
     },
-    "items": [
-    ]
+    "items": []
   },
   {
     "id": "yt_001",
@@ -53,8 +50,7 @@
       "width": 1280,
       "height": 720
     },
-    "items": [
-    ]
+    "items": []
   },
   {
     "id": "ig_001",
@@ -121,6 +117,16 @@
         "path": "https://drive.google.com/uc?export=view&id=1ibpnf3PE5PMrPaF8b7K-CphRcria6nRR",
         "width": 500,
         "height": 500
+      },
+      {
+        "path": "https://drive.google.com/uc?export=view&id=1F3twZ5Dej_HvHo1quUa7Z7ajZGfqK6Qk",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "path": "https://drive.google.com/uc?export=view&id=1ibpnf3PE5PMrPaF8b7K-CphRcria6nRR",
+        "width": 500,
+        "height": 500
       }
     ]
   },
@@ -157,12 +163,6 @@
       {
         "id": "eb_page2a",
         "path": "https://drive.google.com/uc?export=view&id=1mj4YPf_OU4N21hPbZ_KEuwIGFqJIa85s",
-        "width": 512,
-        "height": 800
-      },
-      {
-        "id": "eb_page2a`",
-        "path": "https://drive.google.com/uc?export=view&id=1HkZberINuW2N_0f2lB6mYImJbfQqaOk1",
         "width": 512,
         "height": 800
       }
