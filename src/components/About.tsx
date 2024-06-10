@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Avatar } from "./ui/avatar";
 import Image from "next/image";
@@ -29,7 +31,17 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8 }}>
-            As a freelance <span className="text-emerald-600 font-bold">Graphic Designer</span>, I specialize in creating eye-catching YouTube thumbnails, flyers, social media posts, e-books, and logos. My experience in these areas has sharpened my skills, enabling me to produce compelling content that engages audiences. Passionate about helping brands and content creators connect with their target audiences, I am committed to delivering innovative, high-quality design solutions. I bring fresh ideas, creativity, and technical expertise to every project, and I am eager to collaborate with other creatives to contribute to design concepts that effectively communicate and captivate viewers.
+            As a freelance{" "}
+            <span className="text-emerald-600 font-bold">Graphic Designer</span>
+            , I specialize in creating eye-catching YouTube thumbnails, flyers,
+            social media posts, e-books, and logos. My experience in these areas
+            has sharpened my skills, enabling me to produce compelling content
+            that engages audiences. Passionate about helping brands and content
+            creators connect with their target audiences, I am committed to
+            delivering innovative, high-quality design solutions. I bring fresh
+            ideas, creativity, and technical expertise to every project, and I
+            am eager to collaborate with other creatives to contribute to design
+            concepts that effectively communicate and captivate viewers.
           </motion.p>
         </div>
       </div>
