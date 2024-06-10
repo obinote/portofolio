@@ -18,7 +18,7 @@ const logoData = [
 
 export default function BookProject() {
   return (
-    <div className="mb-9">
+    <div className="mb-9" id="e-book">
       <h2 className="text-3xl font-bold text-center mb-6">E-book Design</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {logoData.map((project) => (
@@ -29,7 +29,7 @@ export default function BookProject() {
             transition={project.transition}
             viewport={{ once: false }}
             style={{
-              maxWidth: 500,
+              maxWidth: 512,
               marginBottom: 36,
             }}>
             <ProjectCard

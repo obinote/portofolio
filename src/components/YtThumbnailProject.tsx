@@ -80,7 +80,7 @@ const thumbnailData = [
 ];
 export default function YtThumbnailProject() {
   return (
-    <div className="mb-9">
+    <div className="mb-9" id="youtube_thumbnail">
       <h2 className="text-3xl font-bold text-center mb-6 text-primary">
         YouTube Thumbnail
       </h2>
